@@ -4,6 +4,16 @@ h1,h2,h3,h4,h5,h6{
 header{
     height: 10vh;
 }
+.btn{
+    font-family: 'Campton Medium';
+}
+label{
+    font-family: 'Campton Bold';
+}
+.pointer{
+    cursor: pointer;
+}
+/* Login Css */
 .body-wrapper{
     height: 90vh;
     background-image: url('../img/bg/Login_BG.png');
@@ -31,3 +41,24 @@ header{
   .custom-input:focus-within {
     border-left: 5px solid #003366;
   }
+  .cust-field{
+    border: none;
+  }
+  .cust-field:focus{
+    outline: none !important;
+  }
+
+  .btn-glb, .btn-glb:hover{
+    color: #fff;
+    background-color:#FF0032;
+    border-radius: 3px;
+  }
+  .show-txt{
+    color: #003366;
+    font-family: 'Campton Bold';
+  }
+.forgot-text{
+    border-bottom: 1px dashed #003366;
+    color: #003366 !important;
+}
+  /* End Of Login Css */
