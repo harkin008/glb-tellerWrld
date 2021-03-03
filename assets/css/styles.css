@@ -13,6 +13,18 @@ label{
 .pointer{
     cursor: pointer;
 }
+.text-def{
+  color: #003366;
+}
+.text-link{
+  font-family: 'Campton Medium';
+}
+body{
+  font-family: 'Campton Light';
+}
+a, a:hover, a:active{
+  text-decoration: none;
+}
 /* Login Css */
 .body-wrapper{
     height: 90vh;
@@ -62,3 +74,42 @@ label{
     color: #003366 !important;
 }
   /* End Of Login Css */
+
+/* Sidebar */
+.sidebar{
+  list-style: none;
+}
+.sidebar li{
+
+}
+.bar-item a{
+  color: #fff;
+}
+
+/* sidebar ends */
+
+/* Main dashboard */
+.money-card{
+  background-color: #F9F9F9;
+  border-radius:10px; 
+  color: #101010;
+  font-weight: 600;
+}
+.money-card .debt{
+  color: #EB2232;
+}
+.pills{
+  border: #82ADD8 solid 1px;
+  border-radius: 19px;
+  color: #003366;
+  font-family: 'Campton Light';
+}
+.pills:hover{
+  background-color:#EBEBEB;
+}
+.card{
+  border-radius: 10px;
+}
+.bd-rt{
+  border-right: 1px solid #707070;
+}
