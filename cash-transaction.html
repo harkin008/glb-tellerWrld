@@ -133,10 +133,10 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-12 p-5">
+                            <div class="col-md-12">
                                 <div class="tab-content" id="pills-tabContent">
                                     <div class="tab-pane fade" id="pills-deposit" role="tabpanel" aria-labelledby="pills-deposit-tab">
-                                        <div class="row">
+                                        <div class="row p-4">
                                             <div class="col-md-12">
                                                 <div class="form-row">
                                                     <div class="form-check mr-4">
@@ -379,7 +379,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade show active" id="pills-withdraw" role="tabpanel" aria-labelledby="pills-withdraw-tab">
+                                    <div class="tab-pane fade" id="pills-withdraw" role="tabpanel" aria-labelledby="pills-withdraw-tab">
                                         <div class="row pt-5 pl-4">
                                             <div class="col-md-3">
                                                 <div class="form-row mb-4">
@@ -418,7 +418,7 @@
                                                         </div>
                                                     </div>
                                                 </div> -->
-                                                <div class="form-row mb-4">
+                                                <!-- <div class="form-row mb-4" id="transaction type">
                                                     <div class="form-check mr-4">
                                                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                                         <label class="form-check-label" for="exampleRadios1">
@@ -431,9 +431,9 @@
                                                             Cheque
                                                         </label>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
-                                            <div class="col-md-9">
+                                            <!-- <div class="col-md-9" id="user-card">
                                                 <div class="card col-md-12 p-0 ">
                                                     <div class="row">
                                                         <div class="col-md-6">
@@ -524,6 +524,57 @@
                                                     </div>
                                                     
                                                 </div>
+                                            </div> -->
+
+                                            <div class=" col-md-12 mt-3 mb-3" id="third-party">
+                                                <div class="form-row p-0">
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2 mb-3">
+                                                            <label>Name</label>
+                                                            <input type="text" class="cust-field-2"  placeholder=""/>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2 mb-3">
+                                                            <label>Withdrawer's name</label>
+                                                            <input type="text" class="cust-field-2"  placeholder="Input Withdrawer's name"/>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2 mb-3">
+                                                            <label>Amount</label>
+                                                            <input type="text" class="cust-field-2"  placeholder="input amount"/>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2 mb-3 p-0">
+                                                            <div class="d-flex flex-column p-3">
+                                                                <label>Means of ID</label>
+                                                                <strong class="text-def">Select means of Identification</strong>                                                                
+                                                            </div>
+                                                            <!-- <ul class="list-group">
+                                                                <li class="list-group-item">Cras justo odio</li>
+                                                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                                                <li class="list-group-item">Morbi leo risus</li>
+                                                                <li class="list-group-item">Porta ac consectetur ac</li>
+                                                                <li class="list-group-item">Vestibulum at eros</li>
+                                                            </ul>  -->
+                                                        </div>    
+                                                                                                          
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2 mb-3">
+                                                            <label>ID Number</label>
+                                                            <input type="text" class="cust-field-2"  placeholder="Enter id number"/>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2 mb-3">
+                                                            <label>Narration</label>
+                                                            <input type="text" class="cust-field-2"  placeholder="Enter narration"/>
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <hr />
@@ -533,52 +584,52 @@
                                                     <div class="form-row">
                                                         <div class="col-md-9" style="border-right: 1px solid #F4F5FA;">
                                                             <div class="row mb-3">
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
                                                                         <label>1,000</label>
-                                                                        <input class="cust-field-2" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
                                                                         <label>500</label>
-                                                                        <input class="cust-field-2" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
                                                                         <label>200</label>
-                                                                        <input class="cust-field-2" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
                                                                         <label>100</label>
-                                                                        <input class="cust-field-2" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
                                                                         <label>50</label>
-                                                                        <input class="cust-field-2" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
                                                                         <label>20</label>
-                                                                        <input class="cust-field-2" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
                                                                         <label>10</label>
-                                                                        <input class="cust-field-2" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
                                                                         <label>5</label>
-                                                                        <input class="cust-field-2" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -586,44 +637,44 @@
                                                             <h6>Total Amount</h6>
                                                             <div class="row mt-3">
                                                             
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
-                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount"  disabled>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
-                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
-                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
-                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
-                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
-                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
-                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3 mb-3">
+                                                                <div class="col-sm-2 mb-3">
                                                                     <div class="custom-input-2 text-center">
-                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -664,107 +715,461 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-vault" role="tabpanel" aria-labelledby="pills-vault-tab">..kkk.</div>
-                                    <div class="tab-pane fade" id="pills-outward" role="tabpanel" aria-labelledby="pills-outward-tab">..mmm.</div>
-                                    <div class="tab-pane fade" id="pills-inward" role="tabpanel" aria-labelledby="pills-inward-tab">..nnnn.</div>
+                                    <div class="tab-pane fade" id="pills-vault" role="tabpanel" aria-labelledby="pills-vault-tab">
+                                        <div class="row p-4">
+                                            <div class="col-md-12">
+                                                <div class="form-row">
+                                                    <div class="form-check mr-4">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="exampleRadios1">
+                                                         Buy Cash
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                        <label class="form-check-label" for="exampleRadios2">
+                                                         Sell Cash
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-row">
+                                                    <div class="col-md-3">
+                                                        <div class="custom-input-2 mb-3 p-0">
+                                                            <div class="d-flex flex-column p-3">
+                                                                <label>Currency</label>
+                                                                <strong class="text-def">Select Currency</strong>                                                                
+                                                            </div>
+                                                            <!-- <ul class="list-group">
+                                                                <li class="list-group-item">Cras justo odio</li>
+                                                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                                                <li class="list-group-item">Morbi leo risus</li>
+                                                                <li class="list-group-item">Porta ac consectetur ac</li>
+                                                                <li class="list-group-item">Vestibulum at eros</li>
+                                                            </ul>  -->
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="custom-input-2">
+                                                            <label>Amount</label>
+                                                            <input class="cust-field-2" type="text" placeholder="Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="custom-input-2">
+                                                            <label>Narration</label>
+                                                            <input class="cust-field-2" type="text" placeholder="Amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr />
+                                        <div class="col-md-12 mt-4">
+                                            <div class="" id="cash">
+                                                    <h6>Number of Entries</h6>
+                                                    <div class="form-row">
+                                                        <div class="col-md-9" style="border-right: 1px solid #F4F5FA;">
+                                                            <div class="row mb-3">
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>1,000</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>500</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>200</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>100</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>50</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>20</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>10</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>5</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr /> 
+                                                            <h6>Total Amount</h6>
+                                                            <div class="row mt-3">
+                                                            
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount"  disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="p-5 text-center amount-box" style="width:100%;">
+                                                                <div class="align-self-center">
+                                                                    <h6>Total Amount</h6>
+                                                                    <p>#10,000</p>  
+                                                                </div>                                                            
+                                                            </div>
+                                                        </div>                                                 
+                                                    </div> 
+                                                </div>                                                   
+                                            <hr />                                              
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <div class="d-flex justify-content-end">
+                                                <button class="btn p-3 submit-btn">Next</button>
+                                            </div>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-outward" role="tabpanel" aria-labelledby="pills-outward-tab">
+                                        <div class="row p-4">
+                                            <div class="col-md-12">
+                                                <div class="form-row">
+                                                    <div class="form-check mr-4">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="exampleRadios1">
+                                                         Buy Cash
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                        <label class="form-check-label" for="exampleRadios2">
+                                                         Sell Cash
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-row">
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2 mb-3 p-0">
+                                                            <div class="d-flex flex-column p-3">
+                                                                <label>Bank Branch</label>
+                                                                <strong class="text-def">Select Branch</strong>                                                                
+                                                            </div>
+                                                            <!-- <ul class="list-group">
+                                                                <li class="list-group-item">Cras justo odio</li>
+                                                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                                                <li class="list-group-item">Morbi leo risus</li>
+                                                                <li class="list-group-item">Porta ac consectetur ac</li>
+                                                                <li class="list-group-item">Vestibulum at eros</li>
+                                                            </ul>  -->
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2">
+                                                            <label>Source Account</label>
+                                                            <input class="cust-field-2" type="text" placeholder="Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2">
+                                                            <label>Destination Account Name</label>
+                                                            <input class="cust-field-2" type="text" placeholder="Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2 mb-3 p-0">
+                                                            <div class="d-flex flex-column p-3">
+                                                                <label>Currency</label>
+                                                                <strong class="text-def">Select Currency</strong>                                                                
+                                                            </div>
+                                                            <!-- <ul class="list-group">
+                                                                <li class="list-group-item">Cras justo odio</li>
+                                                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                                                <li class="list-group-item">Morbi leo risus</li>
+                                                                <li class="list-group-item">Porta ac consectetur ac</li>
+                                                                <li class="list-group-item">Vestibulum at eros</li>
+                                                            </ul>  -->
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2">
+                                                            <label>Amount</label>
+                                                            <input class="cust-field-2" type="text" placeholder="Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="custom-input-2">
+                                                            <label>Narration</label>
+                                                            <input class="cust-field-2" type="text" placeholder="Amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr />
+                                        <div class="col-md-12 mt-4">
+                                            <div class="" id="cash">
+                                                    <h6>Number of Entries</h6>
+                                                    <div class="form-row">
+                                                        <div class="col-md-9" style="border-right: 1px solid #F4F5FA;">
+                                                            <div class="row mb-3">
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>1,000</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>500</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>200</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>100</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>50</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>20</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>10</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <label>5</label>
+                                                                        <input class="cust-field-2 text-center" type="text" placeholder="amount">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr /> 
+                                                            <h6>Total Amount</h6>
+                                                            <div class="row mt-3">
+                                                            
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount"  disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 mb-3">
+                                                                    <div class="custom-input-2 text-center">
+                                                                        <input class="cust-field-2 vh-7" type="text" placeholder="amount" disabled>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="p-5 text-center amount-box" style="width:100%;">
+                                                                <div class="align-self-center">
+                                                                    <h6>Total Amount</h6>
+                                                                    <p>#10,000</p>  
+                                                                </div>                                                            
+                                                            </div>
+                                                        </div>                                                 
+                                                    </div> 
+                                                </div>                                                   
+                                            <hr />                                              
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <div class="d-flex justify-content-end">
+                                                <button class="btn p-3 submit-btn">Next</button>
+                                            </div>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade  show active" id="pills-inward" role="tabpanel" aria-labelledby="pills-inward-tab">
+                                        <div class="col-md-12 mt-5 p-0">
+                                            <h6>Approved Transactions</h6>
+                                            <div class="card pt-4">
+                                                <div class="pl-4 pb-4">
+                                                    <label>Search By</label>
+                                                    <div class="p-3" style="border: 1px solid #707070; width: 250px;">
+                                                        <span>Transaction Period</span>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead class="thead-light">
+                                                        <tr>
+                                                            <th scope="col">S/N</th>
+                                                            <th scope="col">Initiating Branch</th>
+                                                            <th scope="col">Amount</th>
+                                                            <th scope="col">Initiator</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Approval Status</th>
+                                                            <th scope="col">View</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td scope="row">1</td>
+                                                            <td>Globus Bank Branch - Ikoyi</td>
+                                                            <td>N700,000 </td>
+                                                            <td>Seyi Jacobs</td>
+                                                            <td><span>2021-01-14T 16:27:04:02</span></td>
+                                                            <td><a class="btn suc-pill" href="#">Approved</a></td>
+                                                            <td><img src="" alt="eye"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">1</td>
+                                                            <td>Globus Bank Branch - Ikoyi</td>
+                                                            <td>N700,000 </td>
+                                                            <td>Seyi Jacobs</td>
+                                                            <td><span>2021-01-14T 16:27:04:02</span></td>
+                                                            <td><a class="btn failed-pill" href="#">Failed</a></td>
+                                                            <td><img src="" alt="eye"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">1</td>
+                                                            <td>Globus Bank Branch - Ikoyi</td>
+                                                            <td>N700,000 </td>
+                                                            <td>Seyi Jacobs</td>
+                                                            <td><span>2021-01-14T 16:27:04:02</span></td>
+                                                            <td><a class="btn pend-pill">Pending</a></td>
+                                                            <td><img src="" alt="eye"/></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between p-4">
+                                                <div>
+                                                    <p>Showing 1-7 of 50</p>
+                                                </div>
+                                                <div>   
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination justify-content-center">
+                                                          <li class="page-item disabled">
+                                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                          </li>
+                                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                          <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                          </li>
+                                                        </ul>
+                                                      </nav>
+                                                </div>
+                                             </div>
+                                            
+                                        </div>
+                                    </div>
                                 </div>  
                             </div>
                               
-                            
-                            <div class="col-md-12 mt-5">
-                                <h6>Your Entries For The Day</h6>
-                                <div class="card pt-4">
-                                    <div class="d-flex justify-content-between p-4">
-                                        <div class="d-flex ">
-                                            <div class="p-2 pr-4 pl-4 bd-rt">
-                                                <span class="">Debits</span><br />
-                                                <strong class="text-danger">-N50,000</strong>
-                                            </div>
-                                            <div class="p-2 pr-4 pl-4 bd-rt">
-                                                <span>Withdrawals</span><br />
-                                                <strong class="text-success">N700,000</strong>
-                                            </div>
-                                            <div class="p-2 pl-4 pr-4 bd-rt">
-                                                <span>Vault</span> <br />
-                                                <strong class="text-muted">N700,000</strong>
-                                            </div>
-                                            <div class="p-2 pl-4">
-                                                <span>Transferred Funds</span><br />
-                                                <strong class="text-def">N700,000</strong>
-                                            </div>
-                                        </div>
-                                        <div class="p-2">
-                                            <input type="text" placeholder="Search for transaction" />
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead class="thead-light">
-                                              <tr>
-                                                <th scope="col">S/N</th>
-                                                <th scope="col">Transaction Type</th>
-                                                <th scope="col">Account Name</th>
-                                                <th scope="col">Account Number</th>
-                                                <th scope="col">Amount</th>
-                                                <th scope="col">Approval Status</th>
-                                                <th scope="col">View</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <th scope="row">1</th>
-                                                <td>Deposit</td>
-                                                <td>Vault Account 1</td>
-                                                <td>001NGN1000002</td>
-                                                <td><span>-20,000.00</span></td>
-                                                <td><span>Approved</span></td>
-                                                <td><img src="" alt="eye"/></td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">1</th>
-                                                <td>Deposit</td>
-                                                <td>Vault Account 1</td>
-                                                <td>001NGN1000002</td>
-                                                <td><span>-20,000.00</span></td>
-                                                <td><span>Approved</span></td>
-                                                <td><img src="" alt="eye"/></td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">1</th>
-                                                <td>Deposit</td>
-                                                <td>Vault Account 1</td>
-                                                <td>001NGN1000002</td>
-                                                <td><span>-20,000.00</span></td>
-                                                <td><span>Approved</span></td>
-                                                <td><img src="" alt="eye"/></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                    </div>
-                                </div> 
-                                  
-                            </div>
                         </div>
-                         <div class="d-flex justify-content-between p-4">
-                            <div>
-                                <p>Showing 1-7 of 50</p>
-                            </div>
-                            <div>   
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-center">
-                                      <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                      </li>
-                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                      </li>
-                                    </ul>
-                                  </nav>
-                            </div>
-                         </div>
                     </div>
                   </div>
                 
