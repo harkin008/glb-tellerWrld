@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Teller World</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="d-flex">
+            <div class="" style="width:17%;">
+                <div style="position: fixed;width:17%;">
+                    <div class="logo p-3" style="height: 10vh;">
+                        <img class="img-fluid" src="assets/img/brand/Logo.svg" /> 
+                    </div>
+                    <div class="list pt-5" style="background-color: #003366; height: 100vh;">
+                        <ul class="sidebar p-0">
+                           <li class="p-3 ml-4 bar-item">
+                               <a href="#" class="d-flex">
+                                  <img src="assets/img/icons/home-active.svg" /> 
+                                  <span class="align-self-center pl-3">Dashboard</span> 
+                                </a> 
+                            </li> 
+                           <li class="p-3 ml-4 bar-item">
+                              <a href="#" class="d-flex">
+                                <img src="assets/img/icons/funds-inactive.svg" /> 
+                                <span class="align-self-center pl-3">Cash Transaction</span>  
+                              </a> 
+                            </li> 
+                           <li class="p-3 ml-4 bar-item">
+                               <a href="#" class="d-flex active">
+                                    <img src="assets/img/icons/funds-inactive.svg" /> 
+                                    <span class="align-self-center pl-3">Fund Transfer</span>
+                                </a> 
+                            </li> 
+                           <li class="p-3 ml-4 bar-item">
+                               <a href="#" class="d-flex">
+                                    <img src="assets/img/icons/collection-inactive.svg" /> 
+                                    <span class="align-self-center pl-3">Collections</span>
+                               </a> 
+                            </li> 
+                           <li class="p-3 ml-4 bar-item"> 
+                              <a href="#" class="d-flex">
+                                 <img src="assets/img/icons/report-inactive.svg" /> 
+                                 <span class="align-self-center pl-3">Collection Reports</span> 
+                              </a> 
+                            </li> 
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+            <div class="p-0" style="width:83%;">
+                <nav class="p-3 pl-4 bg-white" style="position:fixed; width:83%; box-shadow: 0px 4px 25px #82ADD833; height: 10vh;">
+                    <div class="d-flex justify-content-between">
+                        <div class="pt-4">
+                            <h5>Dashboard</h5>
+                        </div>
+                        <div class="d-flex">
+                            <div class="p-3">Notifications</div>
+                            <div class="d-flex">
+                                <div class="">
+                                    <div class="text-right">
+                                        <span class="text-def text-link">
+                                            Olufemi Oyekoya
+                                        </span> 
+                                    </div>
+                                    <div>femioyekoya@globusbank.com</div>
+                                </div>
+                                <img alt="logout" src=""> 
+                            </div>
+                        </div>
+                    </div>  
+                </nav>
+                <div class="container-fluid pt-4" style="background-color: #F4F5FA;">
+                    <div class="mt-5 p-5">
+                        <div class="row pt-3">
+                            <h6>Today's Transaction 17th January 2021</h6>
+                            <div class="col-md-12 p-0 pt-3">
+                                <div class="card pt-4 pb-4">
+                                    <div class="d-flex justify-content-between flex-wrap pl-5 pr-5">
+                                        <div class="p-2">
+                                            <h4>Bulk Transfer</h4>
+                                            <small>Deposit cash for a customer</small>
+                                        </div>
+                                        <div class="d-flex p-3 money-card">
+                                            <img src="assets/img/icons/Naira.svg" />
+                                            &nbsp;
+                                            <span class="align-self-center debt">-81,0000.00</span>
+                                        </div>
+                                        <div class="d-flex p-3 money-card">
+                                            <img src="assets/img/icons/Dollars.svg" />
+                                            &nbsp;
+                                            <span class="align-self-center">0.00</span>
+                                        </div>
+                                        <div class="d-flex p-3 money-card">
+                                            <img src="assets/img/icons/Pounds.svg" />
+                                            &nbsp;
+                                            <span class="align-self-center">0.00</span>
+                                        </div>
+                                        <div class="d-flex p-3 money-card">
+                                            <img src="assets/img/icons/euros.svg" />
+                                            &nbsp;
+                                            <span class="align-self-center">0.00</span>
+                                        </div>
+                                    </div>  
+                                    <hr />  
+                                    <div class="d-flex pl-5 pr-5 justify-content-between">
+                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link active" id="pills-newTransfer-tab" data-toggle="pill" href="#pills-newTransfer" role="tab" aria-controls="pills-newTransfer" aria-selected="true">New Transfer</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="pills-bulkTransfer-tab" data-toggle="pill" href="#pills-bulkTransfer" role="tab" aria-controls="pills-bulkTransfer" aria-selected="false">Bulk Transfers</a>
+                                              </li>
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="pills-transferHistory-tab" data-toggle="pill" href="#pills-transferHistory" role="tab" aria-controls="pills-transferHistory" aria-selected="false">Transfer History</a>
+                                            </li>                                            
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="pills-bulkReports-tab" data-toggle="pill" href="#pills-bulkReports" role="tab" aria-controls="pills-bulkReports" aria-selected="false">Bulk Reports</a>
+                                            </li>
+                                          </ul>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade" id="pills-bulkReports" role="tabpanel" aria-labelledby="pills-bulkReports-tab">
+                                        <div class="col-md-12 mt-5 p-0">
+                                            <h6>Transactions</h6>
+                                            <div class="card pt-4">
+                                                <div class="d-flex justify-content-between pr-3 pl-3 pb-3">                                            
+                                                    <div class="d-flex flex-column p-3">
+                                                        <label>Search By</label>        
+                                                        <div class="d-flex">                                     
+                                                            <div class="d-flex p-2 mr-3 form-border justify-content-between" style="width:200px;">                                                               
+                                                                <span class="pl-3">All</span>
+                                                                <img src="assets/img/icons/arrow-down.svg"/>
+                                                            </div> 
+                                                            <div class="d-flex p-2 mr-3 form-border" style="width:300px;">
+                                                                <img src="assets/img/icons/search-ico.svg" class="pr-2"/>
+                                                                <input type="text" class="cust-field" placeholder="Search for transactions">
+                                                            </div>
+                                                        </div>                                       
+                                                    </div>      
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead class="thead-light">
+                                                        <tr>
+                                                            <th scope="col">S/N</th>
+                                                            <th scope="col">Batch ID</th>
+                                                            <th scope="col">File Name</th>
+                                                            <th scope="col">Amount</th>
+                                                            <th scope="col">Transaction Count</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Approval Status</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td scope="row">1</td>
+                                                            <td>0012101150944487747</td>
+                                                            <td>January_Vendor.xls</td>
+                                                            <td>N20,000.00</td>
+                                                            <td><span>11 PLC</span></td>
+                                                            <td>01/02/2021</td>
+                                                            <td><a class="btn suc-pill" href="#">Approved</a></td>                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">1</td>
+                                                            <td>0012101150944487747</td>
+                                                            <td>January_Vendor.xls</td>
+                                                            <td>N20,000.00</td>
+                                                            <td><span>11 PLC</span></td>
+                                                            <td>01/02/2021</td>
+                                                            <td><a class="btn suc-pill" href="#">Approved</a></td>                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">1</td>
+                                                            <td>0012101150944487747</td>
+                                                            <td>January_Vendor.xls</td>
+                                                            <td>N20,000.00</td>
+                                                            <td><span>11 PLC</span></td>
+                                                            <td>01/02/2021</td>
+                                                            <td><a class="btn suc-pill" href="#">Approved</a></td>                                                            
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between p-4">
+                                                <div>
+                                                    <p>Showing 1-7 of 50</p>
+                                                </div>
+                                                <div>   
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination justify-content-center">
+                                                          <li class="page-item disabled">
+                                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                          </li>
+                                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                          <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                          </li>
+                                                        </ul>
+                                                      </nav>
+                                                </div>
+                                             </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-transferHistory" role="tabpanel" aria-labelledby="pills-transferHistory-tab">
+                                        <div class="col-md-12 mt-5 p-0">
+                                            <h6>Transactions</h6>
+                                            <div class="card pt-2">
+                                                <div class="d-flex justify-content-between pr-3 pl-3 pb-3">
+                                                    
+                                                    <div class="d-flex flex-column p-3">
+                                                        <label>Search By Transaction Period</label>
+                                                        <div class="d-flex">                                     
+                                                            <div class="d-flex p-2 mr-3 form-border" style="width: 200px;">
+                                                                <img src="assets/img/icons/calender.svg" class="pr-3"/>
+                                                                <input type="date" class="date-input">
+                                                            </div> 
+                                                            <div class="d-flex p-2 mr-3 form-border" style="width: 200px;">
+                                                                <img src="assets/img/icons/calender.svg" class="pr-3" />
+                                                                <input type="date" class="date-input">
+                                                            </div>
+                                                            <div class="p">
+                                                                <button class="btn filter-btn">Filter</button>
+                                                            </div>
+                                                        </div>                                       
+                                                    </div>
+
+                                                    <div class="d-flex flex-column p-3">
+                                                        <label>Search By Approval Status</label>
+                                                        <div class="d-flex p-2 mr-3 form-border justify-content-between" style="width:200px;">                                                               
+                                                            <span class="pl-3">All</span>
+                                                            <img src="assets/img/icons/arrow-down.svg"/>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead class="thead-light">
+                                                            <tr>
+                                                                <th scope="col">S/N</th>
+                                                                <th scope="col">Transaction ID</th>
+                                                                <th scope="col">Sender’s Name</th>
+                                                                <th scope="col">Sender’s Account</th>
+                                                                <th scope="col">Beneficiary Name</th>
+                                                                <th scope="col">Beneficiary Account</th>
+                                                                <th scope="col">Amount</th>
+                                                                <th scope="col">Approval Status</th>
+                                                                <th scope="col">View</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>0012101150944487747</td>
+                                                                <td>Samuel Y Adebo</td>
+                                                                <td>10000018342</td>
+                                                                <td><span>11 PLC</span></td>
+                                                                <td><span>23400018342</span></td>
+                                                                <td><span class="text-success">-N20,000.00</span></td>
+                                                                <td><a class="btn suc-pill" href="#">Approved</a></td>
+                                                                <td><img src="" alt="eye"/></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>                                              
+                                            
+                                            </div>
+                                    
+                                            <div class="d-flex justify-content-between p-4">
+                                                <div>
+                                                    <p>Showing 1-7 of 50</p>
+                                                </div>
+                                                <div>   
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination justify-content-center">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-bulkTransfer" role="tabpanel" aria-labelledby="pills-bulkTransfer-tab">
+                                        <div class="row pt-5 pl-4">
+                                            <div class="col-md-3">
+                                                <div class="form-row mb-3" id="self-payment">
+                                                    <div class="col-md-12 p-0">
+                                                        <div class="col-md p-0">
+                                                            <div class="custom-input-2 mb-3">
+                                                                <label>Customer ID</label>
+                                                                <input type="text" class="cust-field-2"  placeholder=""/>
+                                                            </div>                                                        
+                                                        </div>
+                                                        <div class="col-md p-0">
+                                                            <div class="custom-input-2 mb-3">
+                                                                <label>Amount</label>
+                                                                <input type="text" class="cust-field-2"  placeholder=""/>
+                                                            </div>                                                        
+                                                        </div>
+                                                        <div class="col-md p-0">
+                                                            <div class="custom-input-2 mb-3">
+                                                                <label>Source Narration</label>
+                                                                <input type="text" class="cust-field-2"  placeholder=""/>
+                                                            </div>                                                        
+                                                        </div>
+                                                        <div class="col-md p-0">
+                                                            <div class="custom-input-2 mb-3 d-flex flex-column">
+                                                                <label>Upload File</label>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <input type="file" class="d-none"/>
+                                                                    <button class="btn pills bg-white">Change</button> 
+                                                                </div>                                                                                                                               
+                                                            </div>                                                        
+                                                        </div>
+                                                        <div class="form-row p-2">
+                                                            <div class="form-check mr-4">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                Self
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                                <label class="form-check-label" for="exampleRadios2">
+                                                                Third Party
+                                                                </label>
+                                                            </div>
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9" id="user-card">
+                                                <div class="card col-md-12 p-0 ">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex flex-column pr-5 pl-5 pt-5">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <div class="p-2">
+                                                                            <img src="assets/img/utils/img-holder.svg" class="img-rounded" alt="man-smiling">
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <span class="p-2"><img src="assets/img/icons/left.svg" alt="left" /></span>
+                                                                            <span class="p-2"><img src="assets/img/icons/right.svg" alt="right"/> </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex p-2 justify-content-between">
+                                                                        <div>
+                                                                            <h6>Oyekoya Oluwafemi Ayodeji</h6>
+                                                                            <small>Globus Current Account</small>
+                                                                            <p class="text-def">222134456778</p> 
+                                                                        </div>
+                                                                        <div>
+                                                                            Signature
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row pl-5-5 pr-5 pt-0">
+                                                                    <div class="col-md-6">
+                                                                        <h6>Account number</h6>
+                                                                        <small class="text-def">100000987</small>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <h6>Phone Number</h6>
+                                                                        <small class="text-def">080 3492 7565</small>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <h6>Distributor</h6>
+                                                                        <small class="text-def">Dangote Group Inc</small>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <h6>Email Address</h6>
+                                                                        <small class="text-def">femioyekoya02@gmail.com</small>
+                                                                    </div>
+                                                                    <div class="col-md">
+                                                                        <h6>Address</h6>
+                                                                        <small class="text-def">N0 4bB Adeyemo Alakija Street VI, Lagos</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 pl-0 brd-left">
+                                                            <div>
+                                                                <div class="p-4 d-flex justify-content-between">
+                                                                    <div>
+                                                                        <p>Globus Current Account</p>
+                                                                        <h6>Account Balance</h6>
+                                                                        <h4 class="text-def">#2,439,094.00</h4>  
+                                                                    </div>
+                                                                    <div class="d-flex">
+                                                                        <span class="p-2"><img src="assets/img/icons/left.svg" alt="left" /></span>
+                                                                        <span class="p-2"><img src="assets/img/icons/right.svg" alt="right"/> </span>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                
+                                                                <div class="p-4" style="background-color: #BECCDC;">
+                                                                    <p class="text-def">Senders Statement Of Account</p>
+                                                                </div>
+                                                                <ul class="list-group statement p-3">
+                                                                    <li class="list-group-item d-flex justify-content-between">
+                                                                        <div>
+                                                                        <div>
+                                                                                <strong class="text-sm">Money Transfer, Mobile Money</strong>
+                                                                        </div> 
+                                                                            <small>1/11/2021 &nbsp; 2:40:12pm</small>
+                                                                        </div>
+                                                                        <span class="text-success">NGN5,000</span>
+                                                                    </li>
+                                                                    <li class="list-group-item d-flex justify-content-between">
+                                                                        <div>
+                                                                            <div>
+                                                                                <strong class="text-sm">Money Transfer, Mobile Money</strong>
+                                                                            </div> 
+                                                                            <small>1/11/2021 &nbsp; 2:40:12pm</small>
+                                                                        </div>
+                                                                        <span class="text-success">NGN5,000</span>
+                                                                    </li>
+                                                                    <li class="list-group-item d-flex justify-content-between">
+                                                                        <div>
+                                                                            <div>
+                                                                                <strong class="text-sm">Money Transfer, Mobile Money</strong>
+                                                                            </div> 
+                                                                            <small>1/11/2021 &nbsp; 2:40:12pm</small>
+                                                                        </div>
+                                                                        <span class="text-success">NGN5,000</span>
+                                                                    </li>
+                                                                    <div class="text-center">
+                                                                        <small class="text-def"><img src="assets/img/icons/arrow-down.svg"></small>
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>  
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="col-md-12 mt-3">
+                                            <div class="d-flex justify-content-end">
+                                                <button class="btn p-3 submit-btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tab-pane fade show active" id="pills-newTransfer" role="tabpanel" aria-labelledby="pills-newTransfer-tab">
+                                        <div class="row pt-5 pl-4">
+                                            <div class="col-md-3">
+                                                <div class="form-row mb-3" id="self-payment">
+                                                    <div class="col-md-12 p-0">
+                                                        <div class="col-md p-0">
+                                                            <div class="custom-input-2 mb-3">
+                                                                <label>Customer ID</label>
+                                                                <input type="text" class="cust-field-2"  placeholder=""/>
+                                                            </div>                                                        
+                                                        </div>
+                                                        <div class="col-md p-0">
+                                                            <div class="custom-input-2 mb-3">
+                                                                <label>Send Money To</label>
+                                                                <input type="text" class="cust-field-2"  placeholder=""/>
+                                                            </div>                                                        
+                                                        </div>
+
+                                                        <!-- Suggestions bar -->
+                                                        <!-- <div class="col-md p-0">
+                                                            <span>Suggestions</span>
+                                                            <hr />
+                                                            <div class="d-flex justify-content-between pb-4">
+                                                               <button class="btn pills">
+                                                                    ABC Bank
+                                                               </button>
+
+                                                               <button class="btn pills">
+                                                                ABC Bank
+                                                                </button>
+                                                                <button class="btn pills">
+                                                                    ABC Bank
+                                                                </button>
+                                                            </div>   
+                                                            <div class="custom-input-2 mb-3">
+                                                                <label>Not On List</label>
+                                                                <input type="text" class="cust-field-2"  placeholder="Search Bank Name"/>
+                                                            </div>                                                     
+                                                        </div> -->
+                                                        <div class="form-row p-2">
+                                                            <div class="form-check mr-4">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                Cash
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                                <label class="form-check-label" for="exampleRadios2">
+                                                                Cheque
+                                                                </label>
+                                                            </div>
+                                                        </div>  
+                                                        <div class="col-md p-0">
+                                                            <div class="custom-input-2 mb-3">
+                                                                <label>Amount</label>
+                                                                <input type="text" class="cust-field-2"  placeholder=""/>
+                                                            </div>                                                        
+                                                        </div>
+                                                        <div class="col-md p-0">
+                                                            <div class="custom-input-2 mb-3">
+                                                                <label>Narration</label>
+                                                                <input type="text" class="cust-field-2"  placeholder=""/>
+                                                            </div>                                                        
+                                                        </div>                                                                                                             
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9" id="user-card pb-3">
+                                                <div class="card col-md-12 p-0 ">
+                                                    <div class="row">
+                                                        <div class="col-md-6 pb-3">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex flex-column pr-5 pl-5 pt-5">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <div class="p-2">
+                                                                            <img src="assets/img/utils/img-holder.svg" class="img-rounded" alt="man-smiling">
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <span class="p-2"><img src="assets/img/icons/left.svg" alt="left" /></span>
+                                                                            <span class="p-2"><img src="assets/img/icons/right.svg" alt="right"/> </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex p-2 justify-content-between">
+                                                                        <div>
+                                                                            <h6>Oyekoya Oluwafemi Ayodeji</h6>
+                                                                            <small>Globus Current Account</small>
+                                                                            <p class="text-def">222134456778</p> 
+                                                                        </div>
+                                                                        <div>
+                                                                            Signature
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row pl-5-5 pr-5 pt-0">
+                                                                    <div class="col-md-6">
+                                                                        <h6>Account number</h6>
+                                                                        <small class="text-def">100000987</small>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <h6>Phone Number</h6>
+                                                                        <small class="text-def">080 3492 7565</small>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <h6>Distributor</h6>
+                                                                        <small class="text-def">Dangote Group Inc</small>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <h6>Email Address</h6>
+                                                                        <small class="text-def">femioyekoya02@gmail.com</small>
+                                                                    </div>
+                                                                    <div class="col-md">
+                                                                        <h6>Address</h6>
+                                                                        <small class="text-def">N0 4bB Adeyemo Alakija Street VI, Lagos</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 pl-0 brd-left">
+                                                            <div>
+                                                                <div class="p-4 d-flex justify-content-between">
+                                                                    <div>
+                                                                        <h6>Account Balance</h6>
+                                                                        <h4 class="text-def">#2,439,094.00</h4>  
+                                                                    </div>                                                                    
+                                                                </div>                                                                
+                                                                <div class="p-4" style="background-color: #BECCDC;">
+                                                                    <p class="text-def">Senders Statement Of Account</p>
+                                                                </div>
+                                                                <ul class="list-group statement p-3">
+                                                                    <li class="list-group-item d-flex justify-content-between">
+                                                                        <div>
+                                                                        <div>
+                                                                                <strong class="text-sm">Money Transfer, Mobile Money</strong>
+                                                                        </div> 
+                                                                            <small>1/11/2021 &nbsp; 2:40:12pm</small>
+                                                                        </div>
+                                                                        <span class="text-success">NGN5,000</span>
+                                                                    </li>
+                                                                    <li class="list-group-item d-flex justify-content-between">
+                                                                        <div>
+                                                                            <div>
+                                                                                <strong class="text-sm">Money Transfer, Mobile Money</strong>
+                                                                            </div> 
+                                                                            <small>1/11/2021 &nbsp; 2:40:12pm</small>
+                                                                        </div>
+                                                                        <span class="text-success">NGN5,000</span>
+                                                                    </li>
+                                                                    <li class="list-group-item d-flex justify-content-between">
+                                                                        <div>
+                                                                            <div>
+                                                                                <strong class="text-sm">Money Transfer, Mobile Money</strong>
+                                                                            </div> 
+                                                                            <small>1/11/2021 &nbsp; 2:40:12pm</small>
+                                                                        </div>
+                                                                        <span class="text-success">NGN5,000</span>
+                                                                    </li>
+                                                                    <div class="text-center">
+                                                                        <small class="text-def"><img src="assets/img/icons/arrow-down.svg"></small>
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>  
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="col-md-12 mt-3">
+                                            <div class="d-flex justify-content-end">
+                                                <button class="btn p-3 submit-btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>                                 
+                                </div>  
+                            </div>
+                              
+                        </div>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

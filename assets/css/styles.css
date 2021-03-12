@@ -8,7 +8,7 @@ header{
     font-family: 'Campton Medium';
 }
 label{
-    font-family: 'Campton Bold';
+    font-family: 'Campton Medium';
 }
 .pointer{
     cursor: pointer;
@@ -24,6 +24,7 @@ body{
 }
 a, a:hover, a:active{
   text-decoration: none;
+  font-family: 'Campton Medium';
 }
 .text-sm{
   font-size: 14px;
@@ -34,6 +35,12 @@ a, a:hover, a:active{
 .pl-5-5{
   padding-left: 3.5rem !important;
 }
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
 /* Login Css */
 .body-wrapper{
     height: 90vh;
@@ -238,6 +245,10 @@ th, td{
   padding-bottom: 1rem !important;
   padding-top: 1rem !important;
 }
+th{
+  color: #003366 !important;
+  font-family: 'Campton Medium';
+}
 
 
 
@@ -251,7 +262,8 @@ th, td{
 .form-border{
   border:1px solid rgba(16, 16, 16, 0.29);
   height:55px;
-  align-items:center
+  align-items:center;
+  border-radius: 4px;
 } 
 .date-input{
 
