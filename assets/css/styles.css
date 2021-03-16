@@ -46,7 +46,9 @@ ul li{
   list-style: none;
 }
 
-
+.p-3-4{
+  padding:2.5rem
+}
 /* Login Css */
 .body-wrapper{
     height: 90vh;
@@ -141,6 +143,16 @@ input:checked +label {
 /* sidebar ends */
 
 /* Main dashboard */
+.user-panel{
+  position:fixed; 
+  width:83%;
+  box-shadow: 0px 4px 25px #82ADD833;
+  height: 10vh;
+}
+.body-wrap{
+  background-color: #F4F5FA;
+  height: 100vh;
+}
 .money-card{
   background-color: #F9F9F9;
   border-radius:10px; 
@@ -310,4 +322,13 @@ th{
 } 
 .date-input{
 
+}
+
+
+/* Modal Css */
+.label-header{
+  border-bottom:1px solid rgba(16, 16, 16, 0.1);
+}
+.lower-body{
+  border-bottom: 1px solid rgba(16, 16, 16, 0.1);
 }
