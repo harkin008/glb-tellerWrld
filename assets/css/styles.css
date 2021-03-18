@@ -332,3 +332,19 @@ th{
 .lower-body{
   border-bottom: 1px solid rgba(16, 16, 16, 0.1);
 }
+.text-amount{
+  color: #EB2232;
+  font-size: 32px;
+}
+.domination td{
+  font-family: 'Campton Medium';
+}
+.text-dashed{
+  border-bottom: 1px dashed #003366;
+}
+.btn-reject{
+  background-color: #fff;
+  border: 1px solid #003366;
+  border-radius: 0;
+  width: 200px;
+}
