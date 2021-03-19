@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Teller World</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="d-flex">
+            <div class="" style="width:17%;">
+                <div style="position: fixed;width:17%;">
+                    <div class="logo p-3" style="height: 10vh;">
+                        <img class="img-fluid" src="assets/img/brand/Logo.svg" /> 
+                    </div>
+                    <div class="list pt-5 sidebar-wrapper">
+                        <ul class="sidebar p-0">
+                           <li class="p-3 bar-item active">
+                               <a href="#" class="d-flex ml-4 ">
+                                  <img src="assets/img/icons/home-active.svg" /> 
+                                  <span class="align-self-center pl-3">Dashboard</span> 
+                                </a> 
+                            </li> 
+                           <li class="p-3 bar-item">
+                              <a href="cash-transaction.html" class="d-flex ml-4">
+                                <img src="assets/img/icons/cash-inactive.svg" /> 
+                                <span class="align-self-center pl-3">Cash Transaction</span>  
+                              </a> 
+                            </li> 
+                           <li class="p-3 bar-item">
+                               <a href="funds-transfer.html" class="d-flex ml-4">
+                                    <img src="assets/img/icons/funds-inactive.svg" /> 
+                                    <span class="align-self-center pl-3">Fund Transfer</span>
+                                </a> 
+                            </li> 
+                           <li class="p-3 bar-item">
+                               <a href="collections.html" class="d-flex ml-4 ">
+                                    <img src="assets/img/icons/collection-inactive.svg" /> 
+                                    <span class="align-self-center pl-3">Collections</span>
+                               </a> 
+                            </li> 
+                           <li class="p-3 bar-item"> 
+                              <a href="collection-report.html" class="d-flex ml-4">
+                                 <img src="assets/img/icons/report-inactive.svg" /> 
+                                 <span class="align-self-center pl-3">Collection Reports</span> 
+                              </a> 
+                            </li> 
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+            <div class="p-0" style="width:83%;">
+                <nav class="p-3 pl-4 bg-white user-panel">
+                    <div class="d-flex justify-content-between">
+                        <div class="pt-4">
+                            <h5>Dashboard</h5>
+                        </div>
+                        <div class="d-flex">
+                            <div class="p-3">Notifications
+                                <img src="assets/img/icons/Notification icon.svg">
+                            </div>
+                            <div class="d-flex">
+                                <div class="">
+                                    <div class="text-right">
+                                        <span class="text-def text-link">
+                                            Olufemi Oyekoya
+                                        </span> 
+                                    </div>
+                                    <div>femioyekoya@globusbank.com</div>
+                                </div>
+                                <img alt="logout" src="assets/img/icons/Logout Icon.svg"> 
+                            </div>
+                        </div>
+                    </div>  
+                </nav>
+                <div class="container-fluid pt-4 body-wrap">
+                    <div class="mt-5 p-5">
+                        <h6>Today's Transaction 17th January 2021</h6>
+                        <div class="row pt-3">                         
+                            <div class="col-md-12 p-0 pt-3">
+                                <div class="card pt-4 pb-4">
+                                    <div class="d-flex justify-content-between flex-wrap pl-5 pr-5">
+                                        <div class="p-2">
+                                            <h4 class="text-def">Tellers</h4>
+                                            <span class="text-muted">Bank Branches and Tellers</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between" style="width: 450px;">
+                                            <div class="d-flex p-3 money-card">
+                                                <img src="assets/img/icons/Naira.svg" />
+                                                &nbsp;
+                                                <span class="align-self-center"><strong>100</strong>&nbsp; Vaults</span>
+                                            </div>
+                                            <div class="d-flex p-3 money-card">
+                                                <img src="assets/img/icons/Dollars.svg" />
+                                                &nbsp;
+                                                <span class="align-self-center"><strong>10</strong> &nbsp; Branches</span>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>  
+                                    <hr />  
+                                    <div class="d-flex pl-5 pr-5 justify-content-between">
+                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link active" id="pills-newTransfer-tab" data-toggle="pill" href="#pills-newTransfer" role="tab" aria-controls="pills-newTransfer" aria-selected="true">Abuja</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="pills-bulkTransfer-tab" data-toggle="pill" href="#pills-bulkTransfer" role="tab" aria-controls="pills-bulkTransfer" aria-selected="false">Ibadan</a>
+                                              </li>
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="pills-transferHistory-tab" data-toggle="pill" href="#pills-transferHistory" role="tab" aria-controls="pills-transferHistory" aria-selected="false">Idumagbo</a>
+                                            </li>                                            
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="pills-bulkReports-tab" data-toggle="pill" href="#pills-bulkReports" role="tab" aria-controls="pills-bulkReports" aria-selected="false">Ikeja</a>
+                                            </li>
+                                          </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12 mt-5">
+                                <h6>Today's Entries</h6>
+                                <div class="card pt-4">
+                                    <div class="d-flex justify-content-between p-4">
+                                        <div class="d-flex ">
+                                            <div class="p-2 pr-4 pl-4 bd-rt">
+                                                <span class="card_sub">Debits</span><br />
+                                                <strong class="text-danger">-N50,000</strong>
+                                            </div>
+                                            <div class="p-2 pr-4 pl-4 bd-rt">
+                                                <span class="card_sub">Withdrawals</span><br />
+                                                <strong class="text-success">N700,000</strong>
+                                            </div>
+                                            <div class="p-2 pl-4 pr-4 bd-rt">
+                                                <span class="card_sub">Vault</span> <br />
+                                                <strong class="text-muted">N700,000</strong>
+                                            </div>
+                                            <div class="p-2 pl-4">
+                                                <span class="card_sub">Transferred Funds</span><br />
+                                                <strong class="text-def">N700,000</strong>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="d-flex p-2 mr-3 form-border" style="width:300px;">
+                                                <img src="assets/img/icons/search-ico.svg" class="pr-2"/>
+                                                <input type="text" class="cust-field" placeholder="Search for transactions">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class="thead-light">
+                                              <tr>
+                                                <th scope="col">S/N</th>
+                                                <th scope="col">Vault Account</th>
+                                                <th scope="col">Amount Bought</th>
+                                                <th scope="col">Amount Sold</th>
+                                                <th scope="col">Account Number</th>
+                                                <th scope="col">Total Amount</th>
+                                                <th scope="col">Entries</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Globus Bank Branch - Apapa</td>
+                                                <td>N20,000.00</td>
+                                                <td>N20,000.00</td>
+                                                <td>001NGN10000002</td>
+                                                <td><span class="text-def">N20,000.00</span> </td>
+                                                <td><span class=""> 50 <strong>(40)</strong> </span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>Globus Bank Branch - Apapa</td>
+                                                <td>N20,000.00</td>
+                                                <td>N20,000.00</td>
+                                                <td>001NGN10000002</td>
+                                                <td><span class="text-def">N20,000.00</span> </td>
+                                                <td><span class=""> 50 <strong>(40)</strong> </span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>Globus Bank Branch - Apapa</td>
+                                                <td>N20,000.00</td>
+                                                <td>N20,000.00</td>
+                                                <td>001NGN10000002</td>
+                                                <td><span class="text-def">N20,000.00</span> </td>
+                                                <td><span class=""> 50 <strong>(40)</strong> </span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">4</th>
+                                                <td>Globus Bank Branch - Apapa</td>
+                                                <td>N20,000.00</td>
+                                                <td>N20,000.00</td>
+                                                <td>001NGN10000002</td>
+                                                <td><span class="text-def">N20,000.00</span> </td>
+                                                <td><span class=""> 50 <strong>(40)</strong> </span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div> 
+                                  
+                            </div>
+                        </div>
+                         <div class="d-flex justify-content-between p-4">
+                            <div>
+                                <p>Showing 1-7 of 50</p>
+                            </div>
+                            <div>
+                                <nav >
+                                    <ul class="pagin d-flex justify-content-between">
+                                        <li>
+                                            <a> <img src="assets/img/icons/prev.svg" /> </a>
+                                        </li>
+                                        <li>
+                                            <a class="p-2">1</a>
+                                        </li>
+                                        <li>
+                                            <a class="p-2 text-muted">2</a>
+                                        </li>
+                                        <li>
+                                            <a class="p-2 text-muted">3</a>
+                                        </li>
+                                        <li>
+                                            <a class="p-2 text-muted">4</a>
+                                        </li>
+                                        <li>
+                                            <a> <img src="assets/img/icons/next.svg" /> </a>
+                                        </li> 
+                                    </ul>                                    
+                                </nav>  
+                            </div>
+                         </div>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
